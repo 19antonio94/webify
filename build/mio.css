@@ -1,0 +1,38 @@
+.FirsCln
+{
+  background-color: #F5F5DC;
+  font-family: "cursive";
+  width: 300px;
+padding-left: 10px;
+padding-right: 10px;
+border-radius: 10px 10px 10px 10px;
+position: relative;
+left: 39%;
+bottom: : 30px;
+}
+.cmd
+{
+
+font-size: 13px;
+background-color:#DCDCDC;
+font-family:Arial;
+border-radius: 10px 10px 10px 10px;
+}
+.riga
+{
+font-weight: lighter;
+
+}
+.scndCln
+{
+background-color: #F5F5DC;
+font-family: "cursive";
+width: 300px;
+padding-left: 4px;
+padding-right: 4px;
+border-radius: 10px 10px 10px 10px;
+position: relative;
+left: 39%;
+bottom: : 30px;
+
+}

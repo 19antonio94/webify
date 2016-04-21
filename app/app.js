@@ -7,10 +7,12 @@
     'ngRoute',
     'ngStorage',
     'ngResource',
-    
+
     'LetLife.header',
 
-    'LetLife.underconstruction'
+    'LetLife.underconstruction',
+
+    'controlli'
 
   ])
 
@@ -23,7 +25,11 @@
 
      $httpProvider.interceptors.push('myHttpInterceptor');
 
-
+      $routeProvider.when('/istruzioni', {
+           templateUrl:'istr.html',
+           controller:'istCtrl'
+      }
+    );
       $routeProvider.otherwise({
           redirectTo: function() {
               window.location = '#/uc'
