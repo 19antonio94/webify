@@ -12,7 +12,10 @@
 
     'LetLife.underconstruction',
 
-    'controlli'
+    'LetLife.istr',
+    'LetLife.login'
+
+
 
   ])
 
@@ -25,11 +28,12 @@
 
      $httpProvider.interceptors.push('myHttpInterceptor');
 
-      $routeProvider.when('/istruzioni', {
-           templateUrl:'istr.html',
-           controller:'istCtrl'
-      }
-    );
+
+/*    $routeProvider.when('/login', {
+         templateUrl:'/home/ad2014/Scrivania/webify/build/view/components/login/login.html',
+         controller:'loginCtrl'
+    }
+  );*/
       $routeProvider.otherwise({
           redirectTo: function() {
               window.location = '#/uc'

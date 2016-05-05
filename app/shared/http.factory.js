@@ -24,7 +24,7 @@
               if(!config.headers.s3Request){
                 config.headers.Authorization = 'Bearer ' + $localStorage.token;
               }else{
-                config.headers.Authorization =undefined
+                config.headers.Authorization = undefined;
               }
           } else {
             config.headers.Authorization = 'Basic ' + API.authBasic;

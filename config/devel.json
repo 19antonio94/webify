@@ -1,7 +1,7 @@
 {
   "ENV": "devel",
   "API": {
-    "url" : "https://api-dev.let.life",
-    "authBasic" : "xxxxxxxxxxxxxxxxxx="
+  "url" : "https://api-ssl2.let.life",
+  "authBasic" : "dGVzdC1vYXV0aC1jbGllbnQ6dGVzdC1vYXV0aC1jbGllbnQ="
   }
 }
