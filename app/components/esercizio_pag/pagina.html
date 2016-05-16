@@ -1,0 +1,49 @@
+<script type="text/javascript" src="vendors/Materialize/dist/js/materialize.min.js"></script>
+
+<div id="navigazione">
+  <br>
+<a id="homecss" ng-click="b='home.html'">HOME</a>
+
+<a id="istrcss" href = '#/istruzioni'>ISTRUZIONI</a>
+
+
+
+
+</div>
+
+<div id="contenitore">
+
+<div id="colonna1">
+  <ul class="collapsible" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header"><p class="TitColo">VOCE 1</p></div>
+        <div class="collapsible-body"><p ng-click="b='pagina1.html'">Pagina1</p></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><p class="TitColo">VOCE 2</p></div>
+        <div class="collapsible-body"><p ng-click="b='pagina2.html'">Pagina2</p></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><p class="TitColo">VOCE 3</p></div>
+        <div class="collapsible-body"><p ng-click="b='pagina3.html'">Pagina3</p></div>
+      </li>
+    </ul>
+
+
+</div>
+
+
+
+
+
+
+<div id="colonna2">
+<div ng-switch="b">
+  <span ng-switch-when="pagina1.html"><div ng-include="'view/components/esercizio_pag/pagina1.html'"></div></span>
+  <span ng-switch-when="pagina2.html"><div ng-include="'view/components/esercizio_pag/pagina2.html'"></div></span>
+  <span ng-switch-when="pagina3.html"><div ng-include="'view/components/esercizio_pag/pagina3.html'"></div></span>
+  <span ng-switch-when="home.html"><div ng-include="'view/components/esercizio_pag/home.html'"></div></span>
+  <span ng-switch-default><div ng-include="'view/components/esercizio_pag/home.html'"></span>
+</div>
+
+</div>

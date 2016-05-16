@@ -1,0 +1,32 @@
+Pagina di Registrazione<br>
+
+<p>Inserisci Email:</p> <input ng-model = "username1"></input >
+<p>Inserisci Password:</p> <input ng-model = "password1"></input ><br>
+
+
+
+<!--Accetti i termini :
+    <input type="checkbox" ng-model="checkboxModel.value1" id="test"><br>
+Accetti nda:
+    <input type="checkbox" ng-model="checkboxModel.value2"><br>
+Accetti Privacy:
+    <input type="checkbox" ng-model="checkboxModel.value3"><br>
+
+<div><input type="button" value="SignUp" ng-click = 'b=a(username1,password1,checkboxModel.value1,checkboxModel.value2,checkboxModel.value3)'></div>
+<p>{{ f }}</p>-->
+<form action="#">
+    <p>
+      <input type="checkbox" id="test5" ng-model="terms" />
+      <label for="test5">Termini</label>
+    </p>
+    <p>
+      <input type="checkbox" id="test6" ng-model="nda" />
+      <label for="test6">NDA</label>
+    </p>
+    <p>
+      <input type="checkbox" id="test7" ng-model="privacy" />
+      <label for="test7">Privacy</label>
+    </p>
+
+<div><input type="button" value="SignUp" ng-click = 'b=a(username1,password1,terms,nda,privacy)'></div>
+<p>{{ f }}</p>

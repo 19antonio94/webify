@@ -1,0 +1,30 @@
+#colonna1{
+    float: left;
+    width: 25%;
+    margin-right: 15px;
+    margin-left: 7.5px;
+
+         }
+#colonna2{
+
+         }
+
+#navigazione{
+text-align: left;
+background-color:darkblue;
+height: 60px;
+}
+
+.TitColo{
+
+  font-family: fantasy;
+  height: 0px;
+}
+#istrcss
+{
+  margin-left: 30px;
+}
+#homecss
+{
+  margin-left: 15px;
+}

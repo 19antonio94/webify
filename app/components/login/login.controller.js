@@ -5,7 +5,7 @@
         .module('LetLife.login')
         .controller('loginController',loginf);
 
-function loginf($scope,$http,API)
+function loginf($scope,$http,API,$window,$location)
 {
 
 $scope.a=function(a,b)
@@ -31,12 +31,12 @@ if(response.data.result==true){
      },
    data: jsonLogin
    }).then(function successCallback(response) {
-        $scope.f="Il token e': "+response.data.access_token;
-
+        //$scope.f="Il token e': "+response.data.access_token;
+        $scope.f=$location.path("/pagina");
        // this callback will be called asynchronously
        // when the response is available
      }, function errorCallback(response) {
-         $scope.f="inserire pass";
+         $scope.f="Inserire password";
        // called asynchronously if an error occurs
        // or server returns response with an error status.
      });
@@ -44,7 +44,7 @@ if(response.data.result==true){
 
 
    else {
-     $scope.f = "inserire email valida"
+     $scope.f = "Inserire e-mail valida"
    }
 
   // this callback will be called asynchronously

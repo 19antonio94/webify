@@ -13,7 +13,9 @@
     'LetLife.underconstruction',
 
     'LetLife.istr',
-    'LetLife.login'
+    'LetLife.login',
+    'LetLife.pagina',
+    'LetLife.signup'
 
 
 
